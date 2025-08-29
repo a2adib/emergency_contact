@@ -16,18 +16,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
-  <body class="bg-[#f5fff6] border-2 border-green-600 h-[100vh]">
-    <header>
+  <body class="bg-[#f5fff6] h-[100vh]">
+    <header class="">
       <!-- NavBar Section -->
-      <nav class="bg-white flex px-14 py-7 justify-between">
+      <nav class="bg-white flex px-14 py-7 items-center lg:justify-between flex-col lg:flex-row
+      sm:text-justify sm:justify-center">
         <div class="flex">
           <div>
             <img
@@ -66,7 +62,9 @@
       </nav>
 
       <!-- Banner Section -->
-      <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center p-10">
+      <section
+        class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center p-10"
+      >
         <div class="img flex text-center justify-center">
           <img
             src="assets/logo-dark.png"
@@ -85,43 +83,343 @@
     </header>
 
     <!-- main Section -->
-    <main class="my-10">
+    <main class="my-10 flex flex-col lg:flex-row">
       <!-- carts -->
-      <div class="bg-white border-2 border-green-600 h-[300px] w-100 p-8 ">
-        <div class="flex justify-between text-center">
+      <section class="flex-3 card grid lg:grid-cols-3 sm:grid-cols-1 
+      gap-4 p-5">
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
             <div class="bg-[#FFE3E2] p-2 rounded-2xl">
-                <img src="assets/emergency.png" alt="" class="h-10 max-w-xs object-contain" />
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
             </div>
             <div class="">
-                <i class="fa-regular fa-heart fa-2xl"></i> 
+              <i class="fa-regular fa-heart fa-2xl"></i>
             </div>
-        </div>
-        <div>
+          </div>
+          <div class="mt-4">
             <h1 class="text-2xl font-bold">National Emergency Number</h1>
             <p class="text-lg text-[#5C5C5C]">National Emergency</p>
-        </div>
-        <div>
+          </div>
+          <div class="mt-4">
             <h1 class="text-2xl font-bold">999</h1>
-        </div>
-        <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
             <p class="text-lg text-[#5C5C5C]">All</p>
-        </div>
-        <div>
-            <button class="btn ">
-                <i class="fa-regular fa-clone rotate-90"></i>
-                Copy
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
             </button>
-            <button class="btn ">
-                <i class="fa-regular fa-phone"></i>
-                Call
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
             </button>
+          </div>
         </div>
-       
-      </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <div class="bg-white  p-8 rounded-lg">
+          <div class="flex justify-between text-center">
+            <div class="bg-[#FFE3E2] p-2 rounded-2xl">
+              <img
+                src="assets/emergency.png"
+                alt=""
+                class="h-10 max-w-xs object-contain"
+              />
+            </div>
+            <div class="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">National Emergency Number</h1>
+            <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold">999</h1>
+          </div>
+          <div class="bg-[#F2F2F2] rounded-3xl py-1 px-1 w-10 text-center">
+            <p class="text-lg text-[#5C5C5C]">All</p>
+          </div>
+          <div class="flex mt-4">
+            <button class="btn w-[50%] rounded-lg">
+              <i class="fa-regular fa-clone rotate-90"></i>
+              Copy
+            </button>
+            <button class="btn w-[50%] bg-[#00A63E] text-white rounded-lg ml-4">
+              <i class="fa-regular fa-phone ml4"></i>
+              Call
+            </button>
+          </div>
+        </div>
+      </section>
 
       <!-- history Section-->
-
-      <div></div>
+      <section class="bg-white p-5 mt-5 flex-1">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-xl font-bold"> <i class="fa-regular fa-clock"></i> Call history</h1>
+          </div>
+          <div>
+            <button class="btn bg-[#00A63E] rounded-3xl px-6 py-4 text-base font-semibold text-white ">Clear</button>
+          </div>
+        </div>
+        <div class="bg-[#FAFAFA] rounded-lg flex items-center justify-between p-5 mt-2">
+          <div>
+            <h1 class="text-xl font-bold">
+              Fire Service Number
+            </h1>
+            <p>
+              999
+            </p>
+          </div>
+          <div class="text-lg">
+            <p>11:36:50</p>
+          </div>
+        </div>
+      </section>
+      
     </main>
   </body>
 </html>
