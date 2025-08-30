@@ -55,12 +55,16 @@ function makeCopy(serviceNum){
 }
 
 // Funtion for handle likes
-function countLike(){
-    const newlike = likesCountEl.innerText.trim();
-    let likeInt = parseInt(newlike);
-    likeInt = likes + 1;
-    likesCountEl.textContent = likeInt;
+function countLike(heartElement) {
+    if (heartElement.dataset.liked === "true") {
+        return;
+    }
+    likes++;
+    likesCountEl.textContent = likes;
+    heartElement.dataset.liked = "true";
+    heartElement.innerHTML = `<i class="fa-solid fa-heart fa-2xl text-red-500"></i>`;
 }
+
 
 // National Emergency handlers
 const nationalcallButtons = document.getElementById('national-call-btn');
@@ -83,14 +87,14 @@ nationalcopyButtons.addEventListener('click', () => {
 })
 
 nationalHeart.addEventListener('click', () => {
-    countLike();    
+    const heart = document.getElementById('national-heart')
+    countLike(heart);    
 })
 
 // Police helpline handlers
 const policecallButtons = document.getElementById('police-call-btn');
 const policecopyButtons = document.getElementById('police-copy-btn');
-const policeHeart = document.getElementById("police-heart");
-
+const policeHeart = document.getElementById('police-heart');
 policecallButtons.addEventListener('click', () => {
 
     const name = document.getElementById('police-service-name').innerText;
@@ -107,7 +111,8 @@ policecopyButtons.addEventListener('click', () => {
 })
 
 policeHeart.addEventListener('click', () => {
-    countLike();    
+    const heart = document.getElementById('police-heart');
+    countLike(heart);    
 })
 
 
@@ -115,8 +120,7 @@ policeHeart.addEventListener('click', () => {
 // Fire handlers
 const firecallButtons = document.getElementById('fire-call-btn');
 const firecopyButtons = document.getElementById('fire-copy-btn');
-const fireHeart = document.getElementById("fire-heart");
-
+const fireHeart = document.getElementById('fire-heart');
 firecallButtons.addEventListener('click', () => {
 
     const name = document.getElementById('fire-service-name').innerText;
@@ -133,7 +137,9 @@ firecopyButtons.addEventListener('click', () => {
 })
 
 fireHeart.addEventListener('click', () => {
-    countLike();    
+    const heart = document.getElementById('fire-heart');
+    countLike(heart);
+    
 })
 
 
@@ -158,7 +164,9 @@ healthcopyButtons.addEventListener('click', () => {
 })
 
 healthHeart.addEventListener('click', () => {
-    countLike();    
+
+    const heart = document.getElementById("health-heart");
+    countLike(heart);    
 })
 
 // travel handler
@@ -182,14 +190,14 @@ travelcopyButtons.addEventListener('click', () => {
 })
 
 travelHeart.addEventListener('click', () => {
-    countLike();    
+    const heart = document.getElementById("travel-heart");
+    countLike(heart);    
 })
 
 //ngo handler
 const ngocallButtons = document.getElementById('ngo-call-btn');
 const ngocopyButtons = document.getElementById('ngo-copy-btn');
 const ngoHeart = document.getElementById("ngo-heart");
-
 ngocallButtons.addEventListener('click', () => {
 
     const name = document.getElementById('ngo-service-name').innerText;
@@ -206,7 +214,8 @@ ngocopyButtons.addEventListener('click', () => {
 })
 
 ngoHeart.addEventListener('click', () => {
-    countLike();    
+    const heart = document.getElementById("ngo-heart");
+    countLike(heart);    
 })
 
 
